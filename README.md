@@ -2,7 +2,11 @@
 
 [![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/search-handbooks-commands/refs/heads/main/_playground/blueprint.json)
 
-WordPress plugin for searching developer handbooks via keyboard shortcuts and command palette.
+WordPress plugin for searching developer handbooks via keyboard shortcuts and command palette (see [video](https://youtu.be/je_wUMS5aEc) or [live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/search-handbooks-commands/refs/heads/main/_playground/blueprint.json)).
+
+[![](./assets/snapshot.png)](https://youtu.be/je_wUMS5aEc)
+
+
 
 ## Features
 
