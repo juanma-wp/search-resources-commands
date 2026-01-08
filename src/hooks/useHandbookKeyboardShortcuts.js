@@ -14,7 +14,7 @@ import { store as commandsStore } from "@wordpress/commands";
 import { store as noticesStore } from "@wordpress/notices";
 import { store as keyboardShortcutsStore } from "@wordpress/keyboard-shortcuts";
 import { __ } from "@wordpress/i18n";
-import { HANDBOOKS } from "../constants/handbooks";
+import { ALL_RESOURCES } from "../constants/handbooks";
 import { prefillCommandPalette } from "../utils/commandPaletteHelper";
 
 /**
@@ -64,7 +64,7 @@ export const useHandbookKeyboardShortcuts = () => {
 
 			// Provide visual feedback to user
 			createInfoNotice(
-				__('Handbook mode active. Press B (Block Editor), T (Theme), P (Plugin), or R (REST API)', 'search-handbooks-commands'),
+				__('Handbook mode active. Press B (Block Editor), T (Theme), P (Plugin), R (REST API), L (Learn), or V (WordPress TV)', 'search-handbooks-commands'),
 				{
 					type: 'snackbar',
 					isDismissible: true,
@@ -96,7 +96,7 @@ export const useHandbookKeyboardShortcuts = () => {
 			}
 
 			// Find matching handbook by key press
-			const handbook = HANDBOOKS.find(h => h.key === event.key.toLowerCase());
+			const handbook = ALL_RESOURCES.find(h => h.key === event.key.toLowerCase());
 
 			if (!handbook) {
 				return;
@@ -118,8 +118,13 @@ export const useHandbookKeyboardShortcuts = () => {
 			prefillCommandPalette(handbook.prefix);
 
 			// Show usage hint
+			const resourceType = handbook.type === 'handbook' ? 'Handbook' : '';
+			const message = resourceType
+				? `Type your search and press Enter to search ${handbook.name} ${resourceType}`
+				: `Type your search and press Enter to search ${handbook.name}`;
+
 			createInfoNotice(
-				__(`Type your search and press Enter to search ${handbook.name} Handbook`, 'search-handbooks-commands'),
+				__(message, 'search-handbooks-commands'),
 				{
 					type: 'snackbar',
 					isDismissible: true,

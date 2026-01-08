@@ -10,7 +10,7 @@
 import { useMemo } from "@wordpress/element";
 import { __ } from "@wordpress/i18n";
 import { search } from "@wordpress/icons";
-import { HANDBOOKS } from "../constants/handbooks";
+import { ALL_RESOURCES } from "../constants/handbooks";
 
 /**
  * Creates commands based on search term patterns.
@@ -27,32 +27,34 @@ export const useHandbookCommandsSearch = ({ search: searchTerm }) => {
 		}
 
 		// Check if search term ends with a handbook prefix
-		const matchedHandbooks = HANDBOOKS.filter((handbook) =>
+		const matchedHandbooks = ALL_RESOURCES.filter((handbook) =>
 			searchTerm.endsWith(` ${handbook.prefix}`)
 		);
 
 		// Generate executable search commands when a prefix is detected
-		return matchedHandbooks.flatMap((handbook) => {
+		return matchedHandbooks.flatMap((resource) => {
 			// Extract the actual query by removing the prefix
-			const query = searchTerm.slice(0, -(handbook.prefix.length + 1)).trim();
+			const query = searchTerm.slice(0, -(resource.prefix.length + 1)).trim();
 
 			// Skip empty queries
 			if (!query) {
 				return [];
 			}
 
+			const resourceType = resource.type === 'handbook' ? 'Handbook' : '';
+			const label = resourceType
+				? `Search ${resource.name} ${resourceType}: "${query}"`
+				: `Search ${resource.name}: "${query}"`;
+
 			return [
 				{
-					name: `search-handbooks-commands/handbook-search-${handbook.prefix}`,
-					label: __(
-						`Search ${handbook.name} Handbook: "${query}"`,
-						"search-handbooks-commands"
-					),
+					name: `search-handbooks-commands/handbook-search-${resource.prefix}`,
+					label: __(label, "search-handbooks-commands"),
 					icon: search,
-					searchLabel: `${query} ${handbook.prefix}`,
+					searchLabel: `${query} ${resource.prefix}`,
 					callback: () =>
 						window.open(
-							`${handbook.url}?s=${encodeURIComponent(query)}`,
+							`${resource.url}?s=${encodeURIComponent(query)}`,
 							"_blank"
 						),
 				},

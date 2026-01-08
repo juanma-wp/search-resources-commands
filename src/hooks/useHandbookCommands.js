@@ -13,7 +13,7 @@ import { useDispatch } from "@wordpress/data";
 import { store as commandsStore } from "@wordpress/commands";
 import { store as noticesStore } from "@wordpress/notices";
 import { __ } from "@wordpress/i18n";
-import { HANDBOOKS } from "../constants/handbooks";
+import { ALL_RESOURCES } from "../constants/handbooks";
 
 /**
  * Registers static commands for each handbook.
@@ -27,21 +27,28 @@ export const useHandbookCommands = () => {
 	const { open } = useDispatch(commandsStore);
 	const { createInfoNotice } = useDispatch(noticesStore);
 
-	const commands = HANDBOOKS.map((handbook) => ({
-		name: `search-handbooks-commands/search-${handbook.prefix}`,
-		label: __(`Search ${handbook.name} Handbook`, "search-handbooks-commands"),
-		icon: handbook.icon,
-		callback: () => {
-			open();
-			createInfoNotice(
-				__(`Type your search term and add "${handbook.prefix}" to search`, 'search-handbooks-commands'),
-				{
-					type: 'snackbar',
-					isDismissible: true,
-				}
-			);
-		},
-	}));
+	const commands = ALL_RESOURCES.map((resource) => {
+		const resourceType = resource.type === 'handbook' ? 'Handbook' : '';
+		const label = resourceType
+			? `Search ${resource.name} ${resourceType}`
+			: `Search ${resource.name}`;
+
+		return {
+			name: `search-handbooks-commands/search-${resource.prefix}`,
+			label: __(label, "search-handbooks-commands"),
+			icon: resource.icon,
+			callback: () => {
+				open();
+				createInfoNotice(
+					__(`Type your search term and add "${resource.prefix}" to search`, 'search-handbooks-commands'),
+					{
+						type: 'snackbar',
+						isDismissible: true,
+					}
+				);
+			},
+		};
+	});
 
 	useCommands(commands);
 };

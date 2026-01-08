@@ -48,6 +48,36 @@ var help_default = /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE
 
 /***/ },
 
+/***/ "./node_modules/@wordpress/icons/build-module/library/lifesaver.js"
+/*!*************************************************************************!*\
+  !*** ./node_modules/@wordpress/icons/build-module/library/lifesaver.js ***!
+  \*************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ lifesaver_default)
+/* harmony export */ });
+/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/primitives */ "@wordpress/primitives");
+/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// packages/icons/src/library/lifesaver.tsx
+
+
+var lifesaver_default = /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__.SVG, { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(
+  _wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__.Path,
+  {
+    fillRule: "evenodd",
+    d: "M17.375 15.656A6.47 6.47 0 0018.5 12a6.47 6.47 0 00-.943-3.374l-1.262.813c.448.749.705 1.625.705 2.561a4.977 4.977 0 01-.887 2.844l1.262.813zm-1.951 1.87l-.813-1.261A4.976 4.976 0 0112 17c-.958 0-1.852-.27-2.613-.736l-.812 1.261A6.47 6.47 0 0012 18.5a6.47 6.47 0 003.424-.974zm-8.8-1.87A6.47 6.47 0 015.5 12c0-1.235.344-2.39.943-3.373l1.261.812A4.977 4.977 0 007 12c0 1.056.328 2.036.887 2.843l-1.262.813zm2.581-7.803A4.977 4.977 0 0112 7c1.035 0 1.996.314 2.794.853l.812-1.262A6.47 6.47 0 0012 5.5a6.47 6.47 0 00-3.607 1.092l.812 1.261zM12 20a8 8 0 100-16 8 8 0 000 16zm0-4.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z",
+    clipRule: "evenodd"
+  }
+) });
+
+//# sourceMappingURL=lifesaver.js.map
+
+
+/***/ },
+
 /***/ "./node_modules/@wordpress/icons/build-module/library/pages.js"
 /*!*********************************************************************!*\
   !*** ./node_modules/@wordpress/icons/build-module/library/pages.js ***!
@@ -117,6 +147,29 @@ __webpack_require__.r(__webpack_exports__);
 var search_default = /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__.SVG, { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__.Path, { d: "M13 5c-3.3 0-6 2.7-6 6 0 1.4.5 2.7 1.3 3.7l-3.8 3.8 1.1 1.1 3.8-3.8c1 .8 2.3 1.3 3.7 1.3 3.3 0 6-2.7 6-6S16.3 5 13 5zm0 10.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z" }) });
 
 //# sourceMappingURL=search.js.map
+
+
+/***/ },
+
+/***/ "./node_modules/@wordpress/icons/build-module/library/video.js"
+/*!*********************************************************************!*\
+  !*** ./node_modules/@wordpress/icons/build-module/library/video.js ***!
+  \*********************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ video_default)
+/* harmony export */ });
+/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/primitives */ "@wordpress/primitives");
+/* harmony import */ var _wordpress_primitives__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+// packages/icons/src/library/video.tsx
+
+
+var video_default = /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__.SVG, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_0__.Path, { d: "M18.7 3H5.3C4 3 3 4 3 5.3v13.4C3 20 4 21 5.3 21h13.4c1.3 0 2.3-1 2.3-2.3V5.3C21 4 20 3 18.7 3zm.8 15.7c0 .4-.4.8-.8.8H5.3c-.4 0-.8-.4-.8-.8V5.3c0-.4.4-.8.8-.8h13.4c.4 0 .8.4.8.8v13.4zM10 15l5-3-5-3v6z" }) });
+
+//# sourceMappingURL=video.js.map
 
 
 /***/ },
@@ -1548,48 +1601,80 @@ const SearchHandbooksCommands = () => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   HANDBOOKS: () => (/* binding */ HANDBOOKS)
+/* harmony export */   ALL_RESOURCES: () => (/* binding */ ALL_RESOURCES),
+/* harmony export */   HANDBOOKS: () => (/* binding */ HANDBOOKS),
+/* harmony export */   LEARNING_RESOURCES: () => (/* binding */ LEARNING_RESOURCES),
+/* harmony export */   RESOURCES: () => (/* binding */ RESOURCES)
 /* harmony export */ });
 /* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/code.js");
 /* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/help.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/pages.js");
-/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/plugins.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/lifesaver.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/pages.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/plugins.js");
+/* harmony import */ var _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/icons */ "./node_modules/@wordpress/icons/build-module/library/video.js");
 /**
- * Handbook configuration data.
+ * WordPress resource configuration data.
  *
- * Each handbook entry defines:
+ * Each resource entry defines:
+ * - type: Resource type ('handbook' or 'site')
  * - prefix: The shortcut prefix used in search (e.g., "!b" for Block Editor)
- * - name: Display name of the handbook
- * - url: Base URL for the handbook documentation
- * - icon: WordPress icon component to represent the handbook
+ * - name: Display name of the resource
+ * - url: Base URL for the resource
+ * - icon: WordPress icon component to represent the resource
  * - key: Single character key used in two-step shortcuts (e.g., "b" after Cmd+Option+H)
  */
 
-const HANDBOOKS = [{
+const RESOURCES = [{
+  type: "handbook",
   prefix: "!b",
   name: "Block Editor",
   url: "https://developer.wordpress.org/block-editor/",
   icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_1__["default"],
   key: "b"
 }, {
+  type: "handbook",
   prefix: "!t",
   name: "Theme",
   url: "https://developer.wordpress.org/themes/",
-  icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_2__["default"],
+  icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__["default"],
   key: "t"
 }, {
+  type: "handbook",
   prefix: "!p",
   name: "Plugin",
   url: "https://developer.wordpress.org/plugins/",
-  icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_3__["default"],
+  icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_4__["default"],
   key: "p"
 }, {
+  type: "handbook",
   prefix: "!r",
   name: "REST API",
   url: "https://developer.wordpress.org/rest-api/",
   icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_0__["default"],
   key: "r"
+}, {
+  type: "site",
+  prefix: "!l",
+  name: "Learn WordPress",
+  url: "https://learn.wordpress.org/",
+  icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_2__["default"],
+  key: "l"
+}, {
+  type: "site",
+  prefix: "!v",
+  name: "WordPress TV",
+  url: "https://wordpress.tv/",
+  icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"],
+  key: "v"
 }];
+
+/**
+ * Legacy exports for backward compatibility.
+ * @deprecated Use RESOURCES instead
+ */
+const HANDBOOKS = RESOURCES.filter(r => r.type === "handbook");
+const LEARNING_RESOURCES = RESOURCES.filter(r => r.type === "site");
+const ALL_RESOURCES = RESOURCES;
 
 /***/ },
 
@@ -1644,18 +1729,22 @@ const useHandbookCommands = () => {
   const {
     createInfoNotice
   } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.useDispatch)(_wordpress_notices__WEBPACK_IMPORTED_MODULE_2__.store);
-  const commands = _constants_handbooks__WEBPACK_IMPORTED_MODULE_4__.HANDBOOKS.map(handbook => ({
-    name: `search-handbooks-commands/search-${handbook.prefix}`,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Search ${handbook.name} Handbook`, "search-handbooks-commands"),
-    icon: handbook.icon,
-    callback: () => {
-      open();
-      createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Type your search term and add "${handbook.prefix}" to search`, 'search-handbooks-commands'), {
-        type: 'snackbar',
-        isDismissible: true
-      });
-    }
-  }));
+  const commands = _constants_handbooks__WEBPACK_IMPORTED_MODULE_4__.ALL_RESOURCES.map(resource => {
+    const resourceType = resource.type === 'handbook' ? 'Handbook' : '';
+    const label = resourceType ? `Search ${resource.name} ${resourceType}` : `Search ${resource.name}`;
+    return {
+      name: `search-handbooks-commands/search-${resource.prefix}`,
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(label, "search-handbooks-commands"),
+      icon: resource.icon,
+      callback: () => {
+        open();
+        createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Type your search term and add "${resource.prefix}" to search`, 'search-handbooks-commands'), {
+          type: 'snackbar',
+          isDismissible: true
+        });
+      }
+    };
+  });
   (0,_wordpress_commands__WEBPACK_IMPORTED_MODULE_0__.useCommands)(commands);
 };
 
@@ -1709,23 +1798,25 @@ const useHandbookCommandsSearch = ({
     }
 
     // Check if search term ends with a handbook prefix
-    const matchedHandbooks = _constants_handbooks__WEBPACK_IMPORTED_MODULE_3__.HANDBOOKS.filter(handbook => searchTerm.endsWith(` ${handbook.prefix}`));
+    const matchedHandbooks = _constants_handbooks__WEBPACK_IMPORTED_MODULE_3__.ALL_RESOURCES.filter(handbook => searchTerm.endsWith(` ${handbook.prefix}`));
 
     // Generate executable search commands when a prefix is detected
-    return matchedHandbooks.flatMap(handbook => {
+    return matchedHandbooks.flatMap(resource => {
       // Extract the actual query by removing the prefix
-      const query = searchTerm.slice(0, -(handbook.prefix.length + 1)).trim();
+      const query = searchTerm.slice(0, -(resource.prefix.length + 1)).trim();
 
       // Skip empty queries
       if (!query) {
         return [];
       }
+      const resourceType = resource.type === 'handbook' ? 'Handbook' : '';
+      const label = resourceType ? `Search ${resource.name} ${resourceType}: "${query}"` : `Search ${resource.name}: "${query}"`;
       return [{
-        name: `search-handbooks-commands/handbook-search-${handbook.prefix}`,
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(`Search ${handbook.name} Handbook: "${query}"`, "search-handbooks-commands"),
+        name: `search-handbooks-commands/handbook-search-${resource.prefix}`,
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(label, "search-handbooks-commands"),
         icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_2__["default"],
-        searchLabel: `${query} ${handbook.prefix}`,
-        callback: () => window.open(`${handbook.url}?s=${encodeURIComponent(query)}`, "_blank")
+        searchLabel: `${query} ${resource.prefix}`,
+        callback: () => window.open(`${resource.url}?s=${encodeURIComponent(query)}`, "_blank")
       }];
     });
   }, [searchTerm]);
@@ -1836,7 +1927,7 @@ const useHandbookKeyboardShortcuts = () => {
     handbookModeActive.current = true;
 
     // Provide visual feedback to user
-    createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Handbook mode active. Press B (Block Editor), T (Theme), P (Plugin), or R (REST API)', 'search-handbooks-commands'), {
+    createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Handbook mode active. Press B (Block Editor), T (Theme), P (Plugin), R (REST API), L (Learn), or V (WordPress TV)', 'search-handbooks-commands'), {
       type: 'snackbar',
       isDismissible: true
     });
@@ -1866,7 +1957,7 @@ const useHandbookKeyboardShortcuts = () => {
       }
 
       // Find matching handbook by key press
-      const handbook = _constants_handbooks__WEBPACK_IMPORTED_MODULE_6__.HANDBOOKS.find(h => h.key === event.key.toLowerCase());
+      const handbook = _constants_handbooks__WEBPACK_IMPORTED_MODULE_6__.ALL_RESOURCES.find(h => h.key === event.key.toLowerCase());
       if (!handbook) {
         return;
       }
@@ -1886,7 +1977,9 @@ const useHandbookKeyboardShortcuts = () => {
       (0,_utils_commandPaletteHelper__WEBPACK_IMPORTED_MODULE_7__.prefillCommandPalette)(handbook.prefix);
 
       // Show usage hint
-      createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)(`Type your search and press Enter to search ${handbook.name} Handbook`, 'search-handbooks-commands'), {
+      const resourceType = handbook.type === 'handbook' ? 'Handbook' : '';
+      const message = resourceType ? `Type your search and press Enter to search ${handbook.name} ${resourceType}` : `Type your search and press Enter to search ${handbook.name}`;
+      createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)(message, 'search-handbooks-commands'), {
         type: 'snackbar',
         isDismissible: true
       });
