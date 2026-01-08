@@ -2,9 +2,9 @@
  * WordPress dependencies
  */
 import { registerPlugin } from '@wordpress/plugins';
-import SearchHandbooksCommands from './searchResourcesCommands';
+import SearchResourcesCommands from './searchResourcesCommands';
 
-// Register the plugin with search handbook commands
-registerPlugin("search-handbooks-commands", {
-  render: SearchHandbooksCommands
+// Register the plugin with search resources commands
+registerPlugin("search-resources-commands", {
+  render: SearchResourcesCommands
 });

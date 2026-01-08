@@ -1,11 +1,12 @@
-# Search Handbooks Commands
+# Search Resources Commands
 
 [![](https://img.shields.io/badge/playground-live%20preview-blue?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/search-handbooks-commands/refs/heads/main/_playground/blueprint.json)
 
-WordPress plugin for searching developer handbooks via keyboard shortcuts and command palette (see [video](https://youtu.be/je_wUMS5aEc) or [live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/search-handbooks-commands/refs/heads/main/_playground/blueprint.json)).
+WordPress plugin for searching WordPress resources (handbooks, Learn WordPress, WordPress TV) via keyboard shortcuts and command palette (see [video](https://youtu.be/je_wUMS5aEc) or [live demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/juanma-wp/search-handbooks-commands/refs/heads/main/_playground/blueprint.json)).
 
 [![](./assets/snapshot.png)](https://youtu.be/je_wUMS5aEc)
 
+[![](./assets/snapshot-wp-tv.png)](https://www.youtube.com/watch?v=IrMemyzOaz4)
 
 
 ## Features
@@ -15,12 +16,16 @@ WordPress plugin for searching developer handbooks via keyboard shortcuts and co
   - `T` - Search Theme Handbook
   - `P` - Search Plugin Handbook
   - `R` - Search REST API Handbook
+  - `L` - Search Learn WordPress
+  - `V` - Search WordPress TV
 
-- **Command Palette Integration**: Type search terms followed by handbook prefixes:
+- **Command Palette Integration**: Type search terms followed by prefixes:
   - `!b` - Block Editor
   - `!t` - Theme
   - `!p` - Plugin
   - `!r` - REST API
+  - `!l` - Learn WordPress
+  - `!v` - WordPress TV
 
 ## Installation
 
@@ -44,8 +49,8 @@ WordPress plugin for searching developer handbooks via keyboard shortcuts and co
 
 ### Method 2: Command Palette
 1. Press `Cmd+K` to open command palette
-2. Type your search term followed by `!b` (e.g., "blocks !b")
-3. Press Enter to search the Block Editor handbook
+2. Type your search term followed by a prefix (e.g., "blocks !b" for Block Editor, "gutenberg !l" for Learn WordPress)
+3. Press Enter to search the selected resource
 
 ## Requirements
 

@@ -34,13 +34,13 @@ export const useResourceCommands = () => {
 			: `Search ${resource.name}`;
 
 		return {
-			name: `search-handbooks-commands/search-${resource.prefix}`,
-			label: __(label, "search-handbooks-commands"),
+			name: `search-resources-commands/search-${resource.prefix}`,
+			label: __(label, "search-resources-commands"),
 			icon: resource.icon,
 			callback: () => {
 				open();
 				createInfoNotice(
-					__(`Type your search term and add "${resource.prefix}" to search`, 'search-handbooks-commands'),
+					__(`Type your search term and add "${resource.prefix}" to search`, 'search-resources-commands'),
 					{
 						type: 'snackbar',
 						isDismissible: true,

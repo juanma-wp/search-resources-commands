@@ -48,8 +48,8 @@ export const useResourceCommandsSearch = ({ search: searchTerm }) => {
 
 			return [
 				{
-					name: `search-handbooks-commands/handbook-search-${resource.prefix}`,
-					label: __(label, "search-handbooks-commands"),
+					name: `search-resources-commands/resource-search-${resource.prefix}`,
+					label: __(label, "search-resources-commands"),
 					icon: search,
 					searchLabel: `${query} ${resource.prefix}`,
 					callback: () =>

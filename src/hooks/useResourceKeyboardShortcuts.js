@@ -42,9 +42,9 @@ export const useResourceKeyboardShortcuts = () => {
 	 */
 	useEffect(() => {
 		registerShortcut({
-			name: 'search-handbooks-commands/handbook-mode',
+			name: 'search-resources-commands/resource-mode',
 			category: 'global',
-			description: __('Activate handbook search mode', 'search-handbooks-commands'),
+			description: __('Activate resource search mode', 'search-resources-commands'),
 			keyCombination: {
 				modifier: 'primaryAlt',
 				character: 'h',
@@ -57,14 +57,14 @@ export const useResourceKeyboardShortcuts = () => {
 	 * Shows visual feedback and activates handbook mode with auto-timeout.
 	 */
 	useShortcut(
-		'search-handbooks-commands/handbook-mode',
+		'search-resources-commands/resource-mode',
 		(event) => {
 			event.preventDefault();
 			handbookModeActive.current = true;
 
 			// Provide visual feedback to user
 			createInfoNotice(
-				__('Handbook mode active. Press B (Block Editor), T (Theme), P (Plugin), R (REST API), L (Learn), or V (WordPress TV)', 'search-handbooks-commands'),
+				__('Resource mode active. Press B (Block Editor), T (Theme), P (Plugin), R (REST API), L (Learn), or V (WordPress TV)', 'search-resources-commands'),
 				{
 					type: 'snackbar',
 					isDismissible: true,
@@ -124,7 +124,7 @@ export const useResourceKeyboardShortcuts = () => {
 				: `Type your search and press Enter to search ${handbook.name}`;
 
 			createInfoNotice(
-				__(message, 'search-handbooks-commands'),
+				__(message, 'search-resources-commands'),
 				{
 					type: 'snackbar',
 					isDismissible: true,

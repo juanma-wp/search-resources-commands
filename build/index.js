@@ -1673,12 +1673,12 @@ const useResourceCommands = () => {
     const resourceType = resource.type === 'handbook' ? 'Handbook' : '';
     const label = resourceType ? `Search ${resource.name} ${resourceType}` : `Search ${resource.name}`;
     return {
-      name: `search-handbooks-commands/search-${resource.prefix}`,
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(label, "search-handbooks-commands"),
+      name: `search-resources-commands/search-${resource.prefix}`,
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(label, "search-resources-commands"),
       icon: resource.icon,
       callback: () => {
         open();
-        createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Type your search term and add "${resource.prefix}" to search`, 'search-handbooks-commands'), {
+        createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Type your search term and add "${resource.prefix}" to search`, 'search-resources-commands'), {
           type: 'snackbar',
           isDismissible: true
         });
@@ -1752,8 +1752,8 @@ const useResourceCommandsSearch = ({
       const resourceType = resource.type === 'handbook' ? 'Handbook' : '';
       const label = resourceType ? `Search ${resource.name} ${resourceType}: "${query}"` : `Search ${resource.name}: "${query}"`;
       return [{
-        name: `search-handbooks-commands/handbook-search-${resource.prefix}`,
-        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(label, "search-handbooks-commands"),
+        name: `search-resources-commands/resource-search-${resource.prefix}`,
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(label, "search-resources-commands"),
         icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_2__["default"],
         searchLabel: `${query} ${resource.prefix}`,
         callback: () => window.open(`${resource.url}?s=${encodeURIComponent(query)}`, "_blank")
@@ -1848,9 +1848,9 @@ const useResourceKeyboardShortcuts = () => {
    */
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     registerShortcut({
-      name: 'search-handbooks-commands/handbook-mode',
+      name: 'search-resources-commands/resource-mode',
       category: 'global',
-      description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Activate handbook search mode', 'search-handbooks-commands'),
+      description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Activate resource search mode', 'search-resources-commands'),
       keyCombination: {
         modifier: 'primaryAlt',
         character: 'h'
@@ -1862,12 +1862,12 @@ const useResourceKeyboardShortcuts = () => {
    * Handle Cmd+Option+H activation.
    * Shows visual feedback and activates handbook mode with auto-timeout.
    */
-  (0,_wordpress_keyboard_shortcuts__WEBPACK_IMPORTED_MODULE_1__.useShortcut)('search-handbooks-commands/handbook-mode', event => {
+  (0,_wordpress_keyboard_shortcuts__WEBPACK_IMPORTED_MODULE_1__.useShortcut)('search-resources-commands/resource-mode', event => {
     event.preventDefault();
     handbookModeActive.current = true;
 
     // Provide visual feedback to user
-    createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Handbook mode active. Press B (Block Editor), T (Theme), P (Plugin), R (REST API), L (Learn), or V (WordPress TV)', 'search-handbooks-commands'), {
+    createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)('Resource mode active. Press B (Block Editor), T (Theme), P (Plugin), R (REST API), L (Learn), or V (WordPress TV)', 'search-resources-commands'), {
       type: 'snackbar',
       isDismissible: true
     });
@@ -1919,7 +1919,7 @@ const useResourceKeyboardShortcuts = () => {
       // Show usage hint
       const resourceType = handbook.type === 'handbook' ? 'Handbook' : '';
       const message = resourceType ? `Type your search and press Enter to search ${handbook.name} ${resourceType}` : `Type your search and press Enter to search ${handbook.name}`;
-      createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)(message, 'search-handbooks-commands'), {
+      createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_5__.__)(message, 'search-resources-commands'), {
         type: 'snackbar',
         isDismissible: true
       });
@@ -2258,8 +2258,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// Register the plugin with search handbook commands
-(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)("search-handbooks-commands", {
+// Register the plugin with search resources commands
+(0,_wordpress_plugins__WEBPACK_IMPORTED_MODULE_0__.registerPlugin)("search-resources-commands", {
   render: _searchResourcesCommands__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 })();

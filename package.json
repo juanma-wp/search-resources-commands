@@ -1,7 +1,7 @@
 {
-  "name": "search-handbooks-commands",
+  "name": "search-resources-commands",
   "version": "1.0.0",
-  "description": "WordPress plugin for searching developer handbooks via keyboard shortcuts and command palette",
+  "description": "WordPress plugin for searching WordPress resources via keyboard shortcuts and command palette",
   "scripts": {
     "build": "wp-scripts build",
     "start": "wp-scripts start"
@@ -12,7 +12,8 @@
     "commands",
     "handbook",
     "search",
-    "shortcuts"
+    "shortcuts",
+    "resources"
   ],
   "devDependencies": {
     "@wordpress/scripts": "^27.0.0"
