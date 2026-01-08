@@ -14,6 +14,7 @@ import { store as commandsStore } from "@wordpress/commands";
 import { store as noticesStore } from "@wordpress/notices";
 import { __ } from "@wordpress/i18n";
 import { ALL_RESOURCES } from "../constants/resources";
+import { prefillCommandPalette } from "../utils/commandPaletteHelper";
 
 /**
  * Registers static commands for each resource.
@@ -39,8 +40,9 @@ export const useResourceCommands = () => {
 			icon: resource.icon,
 			callback: () => {
 				open();
+				prefillCommandPalette(resource.prefix);
 				createInfoNotice(
-					__(`Type your search term and add "${resource.prefix}" to search`, 'search-resources-commands'),
+					__(`Replace "search" with your query. Use "${resource.prefix}" after any search term to search ${resource.name}`, 'search-resources-commands'),
 					{
 						type: 'snackbar',
 						isDismissible: true,

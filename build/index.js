@@ -1637,6 +1637,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _constants_resources__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants/resources */ "./src/constants/resources.js");
+/* harmony import */ var _utils_commandPaletteHelper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/commandPaletteHelper */ "./src/utils/commandPaletteHelper.js");
 /**
  * Custom hook for registering individual resource search commands.
  *
@@ -1647,6 +1648,7 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @module useResourceCommands
  */
+
 
 
 
@@ -1678,7 +1680,8 @@ const useResourceCommands = () => {
       icon: resource.icon,
       callback: () => {
         open();
-        createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Type your search term and add "${resource.prefix}" to search`, 'search-resources-commands'), {
+        (0,_utils_commandPaletteHelper__WEBPACK_IMPORTED_MODULE_5__.prefillCommandPalette)(resource.prefix);
+        createInfoNotice((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)(`Replace "search" with your query. Use "${resource.prefix}" after any search term to search ${resource.name}`, 'search-resources-commands'), {
           type: 'snackbar',
           isDismissible: true
         });
